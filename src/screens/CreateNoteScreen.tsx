@@ -92,23 +92,26 @@ const CreateNoteScreen: React.FC<Props> = ({ navigation }) => {
   };
 
   return (
-    <View style={{ flex: 1 }}>
+    <View style={{ flex: 1, backgroundColor: colors.background }}>
       <View
         style={{
-          paddingTop: Platform.OS ? 70 : 20,
           flexDirection: "row",
+          alignItems: "center",
           justifyContent: "space-between",
+          paddingTop: Platform.OS == "android" ? 10 : 70,
           paddingHorizontal: 15,
+          paddingBottom: 10,
         }}
       >
-        <TouchableOpacity
-          onPress={handleBack}
+        <View
           style={{
             flexDirection: "row",
             alignItems: "center",
           }}
         >
-          <AntDesign size={30} color={colors.text} name="arrowleft" />
+          <TouchableOpacity onPress={handleBack}>
+            <AntDesign size={30} color={colors.text} name="arrowleft" />
+          </TouchableOpacity>
           <Text
             style={{
               marginLeft: 20,
@@ -117,9 +120,9 @@ const CreateNoteScreen: React.FC<Props> = ({ navigation }) => {
               fontFamily: "Montserrat-Bold",
             }}
           >
-            Detail
+            Create New
           </Text>
-        </TouchableOpacity>
+        </View>
       </View>
       {/* 
       <TouchableOpacity onPress={handleBack} style={{ paddingLeft: 15 }}>
@@ -136,7 +139,7 @@ const CreateNoteScreen: React.FC<Props> = ({ navigation }) => {
       <ScrollView
         style={{
           // paddingTop: 15,
-          paddingHorizontal: 20,
+          paddingHorizontal: 10,
           // alignItems: "center",
         }}
       >
@@ -184,12 +187,12 @@ const CreateNoteScreen: React.FC<Props> = ({ navigation }) => {
             })
           }
         />
+        <ButtonComponent
+          title="Save"
+          style={{ marginBottom: 20 }}
+          onPress={handleSubmit}
+        />
       </ScrollView>
-      <ButtonComponent
-        title="Save"
-        style={{ marginBottom: 20 }}
-        onPress={handleSubmit}
-      />
     </View>
   );
 };

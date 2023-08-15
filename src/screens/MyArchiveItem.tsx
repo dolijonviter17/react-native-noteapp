@@ -117,7 +117,7 @@ const MyArchiveItem: React.FC<Props> = ({ navigation }) => {
           }}
         >
           <TouchableOpacity onPress={handleBack}>
-            <AntDesign size={30} name="arrowleft" />
+            <AntDesign size={30} color={colors.text} name="arrowleft" />
           </TouchableOpacity>
           <Text
             style={{
@@ -130,9 +130,9 @@ const MyArchiveItem: React.FC<Props> = ({ navigation }) => {
             Arsip Saya
           </Text>
         </View>
-        <TouchableOpacity>
+        {/* <TouchableOpacity>
           <AntDesign size={30} name="questioncircle" />
-        </TouchableOpacity>
+        </TouchableOpacity> */}
       </View>
 
       {loading ? (

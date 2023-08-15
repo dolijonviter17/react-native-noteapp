@@ -101,9 +101,9 @@ const SettingMode: React.FC<Props> = ({ navigation }) => {
             Seting Tampilan
           </Text>
         </View>
-        <TouchableOpacity>
+        {/* <TouchableOpacity>
           <AntDesign size={30} color={colors.text} name="questioncircle" />
-        </TouchableOpacity>
+        </TouchableOpacity> */}
       </View>
 
       <ScrollView
