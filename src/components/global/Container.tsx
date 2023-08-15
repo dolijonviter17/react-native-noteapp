@@ -10,6 +10,7 @@ import {
 } from "react-native";
 import { useTheme } from "@react-navigation/native";
 import HeaderLiveScore from "../livescore/HeaderLiveScore";
+import Profile from "../../assets/images/profiles.jpg";
 
 // const Container = (Component: FC<any>) => (props: any) => {
 //   return <Component {...props} />;
@@ -57,7 +58,7 @@ const Container: React.FC<ContainerProps> = ({ style, children, onPress }) => {
               height: 60,
               borderRadius: 30,
             }}
-            source={{ uri: "https://avatars.githubusercontent.com/u/1?v=3" }}
+            source={Profile}
           />
         </TouchableOpacity>
       </View>

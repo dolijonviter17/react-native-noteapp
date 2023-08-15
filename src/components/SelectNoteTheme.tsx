@@ -7,7 +7,7 @@ const { height, width } = Dimensions.get("window");
 
 const datatypes: string[] = [
   "#FAEBD7",
-  "#0000FF",
+  "#9a9ea4",
   "#88dded",
   "#3C873A",
   "#FF0000",

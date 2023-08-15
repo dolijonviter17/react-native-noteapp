@@ -64,23 +64,31 @@ const DetailNoteScreen: React.FC<Props> = ({ navigation, route }) => {
   };
 
   return (
-    <View style={{ flex: 1 }}>
+    <View
+      style={{
+        flex: 1,
+        backgroundColor: colors.background,
+      }}
+    >
       <View
         style={{
-          paddingTop: Platform.OS ? 70 : 20,
           flexDirection: "row",
+          alignItems: "center",
           justifyContent: "space-between",
+          paddingTop: Platform.OS == "android" ? 10 : 70,
           paddingHorizontal: 15,
+          paddingBottom: 20,
         }}
       >
-        <TouchableOpacity
-          onPress={handleBack}
+        <View
           style={{
             flexDirection: "row",
             alignItems: "center",
           }}
         >
-          <AntDesign size={30} color={colors.text} name="arrowleft" />
+          <TouchableOpacity onPress={handleBack}>
+            <AntDesign size={30} color={colors.text} name="arrowleft" />
+          </TouchableOpacity>
           <Text
             style={{
               marginLeft: 20,
@@ -89,10 +97,10 @@ const DetailNoteScreen: React.FC<Props> = ({ navigation, route }) => {
               fontFamily: "Montserrat-Bold",
             }}
           >
-            Detail
+            Detail Note
           </Text>
-        </TouchableOpacity>
-        <TouchableOpacity onPress={() => handleDelete(detailNote.id)}>
+        </View>
+        <TouchableOpacity onPress={() => handleDelete(note.id)}>
           <FontAwesome size={30} color={colors.text} name="trash" />
         </TouchableOpacity>
       </View>
@@ -150,7 +158,7 @@ const DetailNoteScreen: React.FC<Props> = ({ navigation, route }) => {
 
           <View
             style={{
-              alignSelf: "center",
+              // alignSelf: "center",
               height: height,
               width: "98%",
               borderRadius: 7,
