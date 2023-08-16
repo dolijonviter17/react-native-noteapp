@@ -1,6 +1,10 @@
 # react-native-noteapp
 
-Preview
+
+
+### Installation
+
+### Preview
 
   
 <div>
