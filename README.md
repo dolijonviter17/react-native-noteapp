@@ -1,5 +1,20 @@
 # react-native-noteapp
 
-Note App with React Native
+Preview
 
-![Demo](./src/documentations/detail9.png|width=100)
+  
+<div>
+    <img src="./src/documentations/detail9.png" width="200">
+<img src="./src/documentations/detail10.png" width="200">
+    <img src="./src/documentations/detail11.png" width="200">
+<img src="./src/documentations/detail7.png" width="200">
+</div>
+
+
+
+
+
+
+
+
+
