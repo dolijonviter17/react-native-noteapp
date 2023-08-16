@@ -117,6 +117,7 @@ const MyProfilesScreen: React.FC<Props> = ({ navigation }) => {
           </Text>
 
           <TouchableOpacity
+            onPress={() => navigation.navigate("Profiles")}
             style={{
               flexDirection: "row",
               alignItems: "center",

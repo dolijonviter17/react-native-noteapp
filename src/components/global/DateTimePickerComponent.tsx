@@ -76,7 +76,7 @@ const DateTimePickerComponent = ({
             >
               {value}
             </Text>
-            <FontAwesome size={15} name="calendar" color={colors.border} />
+            <FontAwesome size={15} name="calendar" color={colors.text} />
           </View>
         </TouchableOpacity>
         <DatePicker

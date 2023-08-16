@@ -27,6 +27,7 @@ import { NoteProps } from "../model/NoteModel";
 import MyProfilesScreen from "../screens/MyProfilesScreen";
 import MyArchiveItem from "../screens/MyArchiveItem";
 import SettingMode from "../screens/SettingMode";
+import ProfilesScreen from "../screens/profiles/ProfilesScreen";
 
 export type RootStackParams = {
   Dashboard: undefined;
@@ -35,6 +36,8 @@ export type RootStackParams = {
   Profile: undefined;
   Archive: undefined;
   Mode: undefined;
+  Profiles: undefined;
+  EditProfiles: undefined;
 
   // old
 };
@@ -55,6 +58,8 @@ const RootStackScreen = () => {
       <RootStack.Screen name="Profile" component={MyProfilesScreen} />
       <RootStack.Screen name="Archive" component={MyArchiveItem} />
       <RootStack.Screen name="Mode" component={SettingMode} />
+      <RootStack.Screen name="Profiles" component={ProfilesScreen} />
+      <RootStack.Screen name="EditProfiles" component={EditProfileScreen} />
     </RootStack.Navigator>
   );
 };

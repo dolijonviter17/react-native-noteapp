@@ -47,9 +47,10 @@ const TextInputComponent: React.FC<TextInputProps> = ({
           value={value}
           onChangeText={onChangeText}
           style={{ flex: 1, color: colors.text }}
+          placeholderTextColor={colors.text}
         />
         {!value ? (
-          <FontAwesome size={15} name="pencil" color={colors.border} />
+          <FontAwesome size={15} name="pencil" color={colors.text} />
         ) : null}
       </View>
     </View>
