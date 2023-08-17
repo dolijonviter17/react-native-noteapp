@@ -4,10 +4,10 @@
 
 a simple diary application built using react native and typescript that can run on Android and iOS platforms
 
-Features: Create, Update, Edit, Delete, Archive
-Programming Language: Typescript
-Framework : React Native
-Markup Languages: HTML, CSS
+- Features: Create, Update, Edit, Delete, Archive
+- Programming Language: Typescript
+- Framework : React Native
+- Markup Languages: HTML, CSS
 
 ### Screenshoot
 
