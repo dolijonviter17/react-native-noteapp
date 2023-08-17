@@ -2,14 +2,14 @@
 
 ### About Application
 
-sebuah aplikasi catatan harian sederhana yang dibangun menggunakan react native dan typescript yang dapat dijalankan di platform Android dan Ios
+a simple diary application built using react native and typescript that can run on Android and iOS platforms
 
-- Fitur : Create, Update, Edit, Delete, Arsip
-- Bahasa Pemograman : Typecript
-- Kerangka Kerja : React Native
-- Bahasa Markup : HTML, CSS
+Features: Create, Update, Edit, Delete, Archive
+Programming Language: Typescript
+Framework : React Native
+Markup Languages: HTML, CSS
 
-  ### Screenshoot
+### Screenshoot
 
 <div>
     <img src="./src/documentations/detail9.png" width="200">
